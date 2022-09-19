@@ -8,20 +8,19 @@
     "7. Найти 1 процент от числа\r\n" +
     "8. Найти факториал из числа\r\n" +
     "9. Выйти из программы");
-do
-{
+do { 
 
     Console.WriteLine("Введите операцию, которую хотите выполнить:");
     int menureader = Convert.ToInt32(Console.ReadLine());
 
-
+ 
     while (menureader > 9)
     {
         Console.WriteLine("Введите число из списка");
         menureader = Convert.ToInt32(Console.ReadLine());
     }
 
-    for (int i = menureader; i == 1; i--)
+    if (menureader == 1)
     {
         Console.WriteLine("Введите первое число");
         int firstnumber = Convert.ToInt32(Console.ReadLine());
@@ -31,7 +30,7 @@ do
         Console.WriteLine("Сумма двух чисел:" + summ);
     }
 
-    for (int i = menureader; i == 2; i--)
+    if (menureader == 2)
     {
         Console.WriteLine("Введите первое число");
         int subtraction1 = Convert.ToInt32(Console.ReadLine());
@@ -41,7 +40,7 @@ do
         Console.WriteLine("Разность двух чисел равна:" + subtractionresult);
     }
 
-    for (int i = menureader; i == 3; i--)
+    if (menureader == 3)
     {
         Console.WriteLine("Введите первое число");
         int multiplication1 = Convert.ToInt32(Console.ReadLine());
@@ -51,17 +50,17 @@ do
         Console.WriteLine("Произведение двух чисел равно:" + multiplicationresult);
     }
 
-    for (int i = menureader; i == 4; i--)
+     if (menureader == 4)
     {
         Console.WriteLine("Введите первое число");
         double division1 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Введите второе число");
         double division2 = Convert.ToDouble(Console.ReadLine());
-        double divisionresult = (double)division1 / (double)division2;
+        double divisionresult = division1 / division2;
         Console.WriteLine("Результат деления:" + divisionresult);
     }
 
-    for (int i = menureader; i == 5; i--)
+     if(menureader == 5)
     {
         Console.WriteLine("Введите число, которое возведется в степень");
         int degree1 = Convert.ToInt32(Console.ReadLine());
@@ -71,7 +70,7 @@ do
         Console.WriteLine("Результат возведения в степень:" + degreeresult);
     }
 
-    for (int i = menureader; i == 6; i--)
+    if(menureader == 6)
     {
         Console.WriteLine("Введите число, из которого извлечется корень");
         int root = Convert.ToInt32(Console.ReadLine());
@@ -79,7 +78,7 @@ do
         Console.WriteLine("Корень числа:" + rootresult);
     }
 
-    for (int i = menureader; i == 7; i--)
+    if(menureader == 7)
     {
         Console.WriteLine("Введите число");
         int procent = Convert.ToInt32(Console.ReadLine());
@@ -87,24 +86,24 @@ do
         Console.WriteLine("1 процент от числа:" + procentresult);
     }
 
-    for (int i = menureader; i == 8; i--)
+    if(menureader == 8)
     {
 
         Console.Write("Введите число : ");
         int num = int.Parse(Console.ReadLine());
         int factorial = 1;
-        for (int a = 1; a <= num; a++)
+        for (int i = 1; i <= num; i++)
         {
-            factorial *= a;
+            factorial *= i;
         }
         Console.WriteLine(factorial);
        
     }
 
-    for (int i = menureader; i == 9; i--)
+    if(menureader == 9)
     {
 
-        return 0;
+        break;
 
     }
 }
