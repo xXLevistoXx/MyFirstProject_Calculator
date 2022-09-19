@@ -97,7 +97,7 @@ do
         {
             factorial *= a;
         }
-        Console.WriteLine( factorial);
+        Console.WriteLine(factorial);
        
     }
 
